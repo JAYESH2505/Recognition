@@ -17,6 +17,8 @@
 * Install the Following Dependency
     ```pip install mediapipe```
     ```pip install streamlit```
+    ```pip install pycaw```
+    ```pip install autopy```
 
 * Run using the command
     ```streamlit run Main.py```
