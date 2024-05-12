@@ -22,3 +22,13 @@
 
 * Run using the command
     ```streamlit run Main.py```
+
+
+
+## GUI INTERFACE==>
+
+![alt text](<Screenshot 2024-05-12 184248.png>)
+
+![alt text](<Screenshot 2024-05-12 184256.png>)
+
+![alt text](<Screenshot 2024-05-12 184317.png>)
