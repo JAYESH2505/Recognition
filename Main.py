@@ -17,6 +17,12 @@ from Modules import FaceDetection as FD
 wCam,hCam=1080,1080
 ############
 
+
+######## Camera Selection
+cam=1
+########
+
+
 def main():
     
     st.title("Landmark Recognition")
@@ -83,7 +89,7 @@ def Run_app1():
 
 
     #? Create a Video Capture Object
-    capture=cv2.VideoCapture(1) # capture=cv2.VideoCapture(0)
+    capture=cv2.VideoCapture(cam) # capture=cv2.VideoCapture(0)
     capture.set(3,wCam)
     capture.set(4,hCam)
 
@@ -121,7 +127,7 @@ def Run_app1():
             length=math.hypot(x2-x1,y2-y1)
 
             #Note Length of Line
-            var1,var2=40,400
+            var1,var2=40,350
 
             vol=np.interp(length,[var1,var2],[minvol,maxvol])
             volBar=np.interp(length,[var1,var2],[400,150])
@@ -161,7 +167,7 @@ def Run_app2():
     unsafe_allow_html=True)
 
     #? Creating Video Capturing Object
-    cap=cv2.VideoCapture(1) # cap=cv2.VideoCapture(0)
+    cap=cv2.VideoCapture(cam) # cap=cv2.VideoCapture(0)
     cap.set(3,1280)
     cap.set(4,720)
 
@@ -277,7 +283,7 @@ def Run_app3():
     clocx,clocy=0,0
 
     #? Creating Capture Object
-    cap=cv2.VideoCapture(1)
+    cap=cv2.VideoCapture(cam)
     cap.set(3,wcam)
     cap.set(4,hcam)
 
@@ -325,8 +331,7 @@ def Run_app3():
                 plocy=clocy
 
             #Both Index and Middle Fingers are up:Clicking mods
-            if fingers[1]==1 and fingers[2]==1 and totalFingers==2:
-
+            if fingers[1]==1 and fingers[2]==1 and totalFingers==2: 
                 #Distance Between fingers
                 length,img,info=detector.FindDistance(lmList,8,12,img)
                 # time.sleep(1)
@@ -363,7 +368,7 @@ def Run_app4():
     wcam,hcam=1280,720
 
     #? Creating Capture Object
-    cap=cv2.VideoCapture(1)
+    cap=cv2.VideoCapture(cam)
     cap.set(3,wcam)
     cap.set(4,hcam)
 

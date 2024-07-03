@@ -1,7 +1,7 @@
 
 # Human Landmark Recognition using Mediapipe
 
-*This is a Recognition Model Capable of Performing Various Task such as Volume Control and recognising figures,faces to act as mouse for various Application*
+*This is a Recognition Model Capable of Performing Various Task such as Volume Control and recognising figures,faces to act as mouse and for various Application*
 
 
 # Steps=>
